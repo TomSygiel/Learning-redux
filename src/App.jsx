@@ -19,7 +19,7 @@ function App() {
 
       <div>
         {isLogged ? <button className="button-logout" onClick={() => dispatch(login())}>Log out</button> : <button className="button-login" onClick={() => dispatch(login())}>Log in</button>}
-        <p>{isLogged ? <h3>Valuable information I should not see unless I am logged in</h3> : ''}</p>
+        {isLogged ? <h3>Valuable information I should not see unless I am logged in</h3> : ''}
       </div>
     </div>
   );
